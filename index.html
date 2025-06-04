@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YGstudio97 Links</title>
+  <style>
+    :root {
+      --gradient: linear-gradient(135deg, #000000, #111827, #1f2937);
+      --accent: #00e5ff;
+      --text: #e0e0e0;
+      --muted: #999;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: var(--gradient);
+      color: var(--text);
+      scroll-behavior: smooth;
+      animation: gradientMove 20s ease infinite;
+      background-size: 300% 300%;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 2rem;
+      background: #000000c0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    nav h1 {
+      color: var(--accent);
+      font-size: 1.6rem;
+    }
+
+    nav button {
+      padding: 0.6rem 1.4rem;
+      background: var(--accent);
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 12px var(--accent);
+      transition: transform 0.3s;
+    }
+
+    nav button:hover {
+      transform: scale(1.1);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      color: white;
+      text-shadow: 0 0 8px #000;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    #links {
+      display: none;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .link-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 18px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s ease;
+    }
+
+    .link-card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .link-card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 0 6px var(--accent));
+    }
+
+    .link-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .link-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .link-card a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 0 12px var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+      background: rgba(0,0,0,0.5);
+      margin-top: 5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>YGstudio97</h1>
+    <button onclick="revealLinks()">All Links</button>
+  </nav>
+
+  <div class="hero">
+    <h2>Welcome to My Universe</h2>
+    <p>Click the button to explore my creative platforms 🌐</p>
+  </div>
+
+  <div id="links">
+    <div class="link-card">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+      <h3>GitHub</h3>
+      <p>Explore my open-source projects and experiments.</p>
+      <a href="https://github.com/YGstudio97" target="_blank">Visit</a>
+    </div>
+    <div class="link-card">
+      <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/discord_logo_icon_170948.png" alt="Discord">
+      <h3>Discord</h3>
+      <p>Join my community server and chat with devs.</p>
+      <a href="https://discord.gg/hHefj3UnZ7" target="_blank">Join</a>
+    </div>
+    <div class="link-card">
+      <img src="https://avatars.githubusercontent.com/u/7111340?s=200&v=4" alt="GitBook">
+      <h3>GitBook</h3>
+      <p>Read detailed docs and guides I created.</p>
+      <a href="https://ygstudio97.gitbook.io/ygstudio97-info" target="_blank">Docs</a>
+    </div>
+    <div class="link-card">
+      <img src="https://about.gitlab.com/images/press/logo/png/gitlab-icon-rgb.png" alt="GitLab">
+      <h3>GitLab</h3>
+      <p>Browse my public & private GitLab repos.</p>
+      <a href="https://gitlab.com/YGstudio97" target="_blank">Visit</a>
+    </div>
+    <div class="link-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+      <h3>YouTube</h3>
+      <p>Watch my videos, tutorials, and showcases.</p>
+      <a href="https://youtube.com/@YGstudio97" target="_blank">Watch</a>
+    </div>
+    <div class="link-card">
+      <img src="https://static.itch.io/images/itchio-textless-white.svg" alt="Itch.io">
+      <h3>Itch.io</h3>
+      <p>Download my indie games and projects.</p>
+      <a href="https://ygstudio97.itch.io/" target="_blank">Play</a>
+    </div>
+    <div class="link-card">
+      <img src="https://cdn.modrinth.com/data/logo.png" alt="Modrinth">
+      <h3>Modrinth</h3>
+      <p>Minecraft mods and creative content.</p>
+      <a href="https://modrinth.com/user/YGstudio97" target="_blank">Mods</a>
+    </div>
+    <div class="link-card">
+      <img src="https://www.curseforge.com/favicon.ico" alt="CurseForge">
+      <h3>CurseForge</h3>
+      <p>View all my CurseForge mod releases.</p>
+      <a href="https://curseforge.com/members/ygstudio97/projects" target="_blank">Explore</a>
+    </div>
+    <div class="link-card">
+      <img src="https://telegram.org/img/t_logo.png" alt="Telegram">
+      <h3>Telegram</h3>
+      <p>Follow my latest announcements & news.</p>
+      <a href="https://t.me/ygstudio97" target="_blank">Join</a>
+    </div>
+  </div>
+
+  <footer>Created by YGStudio</footer>
+
+  <script>
+    function revealLinks() {
+      const links = document.getElementById('links');
+      links.style.display = 'grid';
+      links.scrollIntoView({ behavior: 'smooth' });
+
+      document.querySelectorAll('.link-card').forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add('show');
+        }, index * 100);
+      });
+    }
+  </script>
+
+</body>
+</html>

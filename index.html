@@ -215,6 +215,80 @@
       <p>Follow my latest announcements & news.</p>
       <a href="https://t.me/ygstudio97" target="_blank">Join</a>
     </div>
+    <div class="gravatar-hovercard"><style></style>
+			<div class="gravatar-hovercard__inner">
+				<div class="gravatar-hovercard__header-image" style="background: url(&quot;https://2.gravatar.com/userimage/267241213/0a015f60fc6f060edd5ef5af4ea6be2f?size=1024&quot;) 50% 47% / 100% no-repeat;"></div>
+				<div class="gravatar-hovercard__header">
+					<a class="gravatar-hovercard__avatar-link" href="https://gravatar.com/luminarydeliciousf6ecd3b76d?utm_source=hovercard" target="_blank">
+						<img class="gravatar-hovercard__avatar" src="https://2.gravatar.com/avatar/5d22fc741e4216aaea5339a772b84d43f8f7b984675000fba6ee15cc9fa9b291?s=256" width="104" height="104" alt="YGstudio97">
+					</a>
+					<a class="gravatar-hovercard__personal-info-link" href="https://gravatar.com/luminarydeliciousf6ecd3b76d?utm_source=hovercard" target="_blank">
+						<h4 class="gravatar-hovercard__name">YGstudio97</h4>
+						<p class="gravatar-hovercard__job">Yusuf, YGstudio97</p>
+						<p class="gravatar-hovercard__location">Bangladesh</p>
+					</a>
+				</div>
+				<div class="gravatar-hovercard__body">
+								<p class="gravatar-hovercard__description">Hay Bros I'm YG This Studio Owner Real Soo You Need Any Work To You Can Join Thios Studio. 🐦‍🔥</p>
+							</div>
+				<div class="gravatar-hovercard__social-links">
+					<a class="gravatar-hovercard__social-link" href="https://gravatar.com/luminarydeliciousf6ecd3b76d?utm_source=hovercard" target="_blank" data-service-name="gravatar">
+						<img class="gravatar-hovercard__social-icon" src="https://s.gravatar.com/icons/gravatar.svg" width="32" height="32" alt="Gravatar">
+					</a>
+					
+					<a class="gravatar-hovercard__social-link" href="https://github.com/YGstudio97" target="_blank" data-service-name="github">
+						<img class="gravatar-hovercard__social-icon" src="https://s.gravatar.com/icons/github.svg" width="32" height="32" alt="GitHub">
+					</a>
+				
+					<a class="gravatar-hovercard__social-link" href="https://www.youtube.com/channel/UCM3r0meQ-cla4qwafGZITIw" target="_blank" data-service-name="youtube">
+						<img class="gravatar-hovercard__social-icon" src="https://s.gravatar.com/icons/youtube.svg" width="32" height="32" alt="YouTube">
+					</a>
+				
+				</div>
+				
+				<div class="gravatar-hovercard__footer">
+					<a class="gravatar-hovercard__profile-url" title="https://gravatar.com/luminarydeliciousf6ecd3b76d" href="https://gravatar.com/luminarydeliciousf6ecd3b76d?utm_source=profile-card" target="_blank">
+						gravatar.com/luminarydeliciousf6ecd3b76d
+					</a>
+					<a class="gravatar-hovercard__profile-link" href="https://gravatar.com/luminarydeliciousf6ecd3b76d?utm_source=profile-card" target="_blank">
+						View profile →
+					</a>
+				</div>
+				
+				
+				<div class="gravatar-hovercard__profile-color" style="background: linear-gradient(181deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);"></div>
+			</div>
+		<script>
+		const hovercardInner = document.querySelector('.gravatar-hovercard__inner');
+
+		function openDrawer( target, container ) {
+			const selector = '.gravatar-hovercard__drawer[data-drawer-name="' + target.dataset.targetDrawer + '"]';
+			const drawer = container.querySelector( selector );
+			drawer?.classList.add( 'gravatar-hovercard__drawer--open' );
+		}
+
+		function closeDrawer( target, container ) {
+			const selector = '.gravatar-hovercard__drawer[data-drawer-name="' + target.dataset.targetDrawer + '"]';
+			const drawer = container.querySelector( selector );
+			drawer?.classList.add( 'gravatar-hovercard__drawer--closing' );
+			drawer?.classList.remove( 'gravatar-hovercard__drawer--open' );
+
+			setTimeout( () => {
+				drawer?.classList.remove( 'gravatar-hovercard__drawer--closing' );
+			}, 300 );
+		}
+
+		hovercardInner.querySelectorAll( '.gravatar-hovercard__button' ).forEach( ( el ) => {
+			el.addEventListener( 'click', () => openDrawer( el, hovercardInner ) );
+		} );
+		hovercardInner.querySelectorAll( '.gravatar-hovercard__drawer-close' ).forEach( ( el ) => {
+			el.addEventListener( 'click', () => closeDrawer( el, hovercardInner ) );
+		} );
+		hovercardInner.querySelectorAll( '.gravatar-hovercard__drawer-backdrop' ).forEach( ( el ) => {
+			el.addEventListener( 'click', () => closeDrawer( el, hovercardInner ) );
+		} );
+	    </script>
+    </div>
   </div>
 
   <footer>Created by YGStudio</footer>
